@@ -99,6 +99,54 @@ nav.scrolled {
   background-size: cover;
 }
 
+.header-text-box {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  margin: 0 auto;
+}
+
+.header-text-box h3 {
+  color: #fff;
+  font-weight: 200;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+}
+
+.header-text-box h3::first-letter {
+  border-bottom: solid 4px #8F12FD;
+}
+
+.header-text-box h4 {
+  font-size: 50px;
+  color: #fff;
+  margin: 0 0 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.header-cta {
+  background: #FE5151;
+  color: #fff;
+  animation-name: moveInBottom;
+  animation-duration: 4s;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 825px) {
   .lines {
