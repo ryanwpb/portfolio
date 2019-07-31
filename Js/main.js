@@ -14,10 +14,12 @@ $('main').on('click', function() {
 $(window).on('scroll', function() {
     if($(this).scrollTop() > 10) {
       $('nav').css('background', '#fff');
+      $('nav').addClass('scrolled');
       $('.nav-link, .logo-h3').css('color', '#FE5151');
       $('.line').css('background', '#FE5151');
     } else if ($(this).scrollTop() < 10) {
       $('nav').css('background', 'transparent');
+      $('nav').removeClass('scrolled');
       $('.nav-link, .logo-h3').css('color', '#fff');
       $('.line').css('background', '#fff');
     }
