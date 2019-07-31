@@ -15,8 +15,10 @@ $(window).on('scroll', function() {
     if($(this).scrollTop() > 10) {
       $('nav').css('background', '#fff');
       $('.nav-link, .logo-h3').css('color', '#FE5151');
+      $('.line').css('background', '#FE5151');
     } else if ($(this).scrollTop() < 10) {
       $('nav').css('background', 'transparent');
       $('.nav-link, .logo-h3').css('color', '#fff');
+      $('.line').css('background', '#fff');
     }
 });
