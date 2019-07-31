@@ -9,4 +9,5 @@ lines.onclick = function() {
 
 main.onclick = function() {
  sideBar.style.left = "-270px";
+ sideBar.classList.remove("toggled");
 };
