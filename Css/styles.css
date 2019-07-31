@@ -164,4 +164,9 @@ nav.scrolled {
     margin: 5px 0;
     border-radius: 3px;
   }
+
+  .header-text-box {
+    top: 58%;
+    left: 50%;
+  }
 }
