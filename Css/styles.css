@@ -68,7 +68,7 @@ nav.scrolled {
   z-index: 10;
   height: 100%;
   width: 270px;
-  background: #fff;
+  background: #FE5151;
   transition: all 0.3s ease;
 }
 
@@ -82,7 +82,7 @@ nav.scrolled {
 }
 
 .side-bar a {
-  color: #FE5151;
+  color: #fff;
   text-decoration: none;
   width: 100%;
 }
