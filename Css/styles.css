@@ -5,8 +5,85 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* Color scheme
 #4DB05F;
 #B2CBB6;
 #33485D;
 */
+nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+}
+
+.logo h3 {
+  color: #4DB05F;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+.main-nav li:not(:last-child) {
+  margin: 0 20px 0 0;
+}
+
+.main-nav a {
+  color: #4DB05F;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.lines {
+  display: none;
+  cursor: pointer;
+}
+
+.side-bar {
+  position: absolute;
+  top: 0;
+  left: -270px;
+  z-index: 10;
+  height: 100%;
+  width: 270px;
+  background: #33485D;
+  transition: all 0.3s ease;
+}
+
+.side-bar ul {
+  list-style: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 825px) {
+  .lines {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .line {
+    height: 3px;
+    width: 30px;
+    background: #4DB05F;
+    margin: 5px 0;
+    border-radius: 3px;
+  }
+}
