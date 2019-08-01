@@ -45,8 +45,8 @@ nav.scrolled {
   display: flex;
 }
 
-.main-nav ul li {
-  margin: 0 20px;
+.main-nav ul li:not(:last-child) {
+  margin: 0 20px 0 0;
 }
 
 .main-nav a {
@@ -54,6 +54,7 @@ nav.scrolled {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 0.8px;
 }
 
 .lines {
@@ -78,6 +79,8 @@ nav.scrolled {
   color: #fff;
   text-decoration: none;
   width: 100%;
+  letter-spacing: 0.8px;
+  font-weight: 700;
 }
 
 .side-bar.toggled {
@@ -142,6 +145,12 @@ nav.scrolled {
   color: #fff;
   animation-name: moveInBottom;
   animation-duration: 4s;
+}
+
+.defualt {
+  padding: 20rem 0;
+  background: #F4F4F4;
+  margin-top: -20vh;
 }
 
 @keyframes moveInLeft {
