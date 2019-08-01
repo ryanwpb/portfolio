@@ -52,9 +52,35 @@ nav.scrolled {
 .main-nav a {
   color: #fff;
   text-decoration: none;
-  text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-nav a:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #FE5151;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.main-nav a:hover:after,
+.main-nav a:focus:after,
+.main-nav a:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
 }
 
 .lines {
@@ -78,9 +104,35 @@ nav.scrolled {
 .side-bar a {
   color: #fff;
   text-decoration: none;
-  width: 100%;
-  letter-spacing: 0.8px;
   font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+
+.side-bar a:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #8F12FD;
+  height: 2px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.side-bar a:hover:after,
+.side-bar a:focus:after,
+.side-bar a:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
 }
 
 .side-bar.toggled {
