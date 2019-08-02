@@ -220,7 +220,6 @@ nav.scrolled {
 /* .margin-bottom-large {
   margin-bottom: 8rem;
 } */
-
 .sect-heading {
   font-size: 35px;
   text-transform: uppercase;
@@ -290,8 +289,6 @@ nav.scrolled {
   top: 10rem;
   left: 20%;
 }
-
-
 
 @keyframes moveInLeft {
   0% {
@@ -375,5 +372,14 @@ nav.scrolled {
   .col-1-of-2 {
     max-width: 100%;
     margin: 2rem;
+  }
+
+  .composition-photo {
+    width: 70%;
+  }
+
+  .composition-photo.p3 {
+    top: 9rem;
+    left: 10%;
   }
 }
