@@ -214,8 +214,12 @@ nav.scrolled {
 }
 
 .margin-bottom-med {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
+
+/* .margin-bottom-large {
+  margin-bottom: 8rem;
+} */
 
 .sect-heading {
   font-size: 35px;
@@ -225,7 +229,7 @@ nav.scrolled {
 }
 
 .row {
-  max-width: 1180px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -249,14 +253,38 @@ nav.scrolled {
 }
 
 .paragraph:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-.composition-photo-p1 {
-  height: 200px;
-  border-radius: 3px;
-  overflow: hidden;
+.composition {
+  position: relative;
 }
+
+.composition-photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(1, 1, 1, .6);
+  border-radius: 3px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.composition-photo.p1 {
+  position: relative;
+  top: -2rem;
+  left: 1rem;
+}
+
+.composition-photo.p2 {
+  top: 2rem;
+  right: 0;
+}
+
+.composition-photo.p3 {
+  top: 10rem;
+  left: 20%;
+}
+
+
 
 @keyframes moveInLeft {
   0% {
