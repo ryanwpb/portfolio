@@ -262,10 +262,17 @@ nav.scrolled {
 
 .composition-photo {
   width: 55%;
-  box-shadow: 0 1.5rem 4rem rgba(1, 1, 1, .6);
+  box-shadow: 0 1.5rem 4rem rgba(1, 1, 1, .4);
   border-radius: 3px;
   position: absolute;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.composition-photo:hover {
+  transform: scale(1.05);
+  z-index: 20;
+  box-shadow: 0 1.5rem 4rem rgba(1, 1, 1, .8);
 }
 
 .composition-photo.p1 {
