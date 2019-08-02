@@ -252,6 +252,8 @@ nav.scrolled {
 
 .composition-photo-p1 {
   height: 200px;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 @keyframes moveInLeft {
