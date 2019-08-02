@@ -221,6 +221,7 @@ nav.scrolled {
   font-size: 35px;
   text-transform: uppercase;
   font-weight: 700;
+  color: #222;
 }
 
 .row {
@@ -240,6 +241,7 @@ nav.scrolled {
 .heading-tertiary {
   font-weight: 700;
   text-transform: uppercase;
+  color: #222;
 }
 
 .paragraph {
