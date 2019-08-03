@@ -332,7 +332,7 @@ section#stories {
   padding: 15rem 0;
 }
 
-section#stories> * {
+section#stories>* {
   transform: skewY(7deg);
 }
 
@@ -353,7 +353,6 @@ section#stories> * {
   transform: skewX(-12deg);
   cursor: pointer;
   backface-visibility: hidden;
-  border: solid #e5e5e5;
 }
 
 .story>* {
@@ -371,6 +370,7 @@ section#stories> * {
   background-size: cover;
   position: relative;
   transition: all 0.3s;
+  border: solid #e5e5e5;
 }
 
 .caption {
@@ -417,7 +417,6 @@ section#stories> * {
   font-family: 'Shadows Into Light', cursive;
   color: #8F12FD;
 }
-
 
 @keyframes moveInLeft {
   0% {
