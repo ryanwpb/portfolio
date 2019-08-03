@@ -353,6 +353,7 @@ section#stories> * {
   transform: skewX(-12deg);
   cursor: pointer;
   backface-visibility: hidden;
+  border: solid #e5e5e5;
 }
 
 .story>* {
