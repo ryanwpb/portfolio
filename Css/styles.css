@@ -235,6 +235,14 @@ span.sect-span {
   font-weight: 200;
 }
 
+p.sect-sub-heading {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
 .row {
   max-width: 1280px;
   margin: 0 auto;
@@ -319,12 +327,16 @@ span.sect-span {
 }
 
 section#stories {
-  background-color: #FE5151;
+  background-color: #fff;
   transform: skewY(-7deg);
 }
 
-section#stories>* {
+section#stories> * {
   transform: skewY(7deg);
+}
+
+.sect-heading.white, .sect-sub-heading.white {
+  color: #fff;
 }
 
 .story {
@@ -403,6 +415,7 @@ section#stories>* {
   font-family: 'Shadows Into Light', cursive;
   color: #8F12FD;
 }
+
 
 @keyframes moveInLeft {
   0% {
