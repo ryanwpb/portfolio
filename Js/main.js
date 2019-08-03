@@ -19,16 +19,18 @@ $(window).on('scroll', function() {
       $('nav').addClass('scrolled');
       $('.nav-link, .logo-h3').css('color', '#FE5151');
       $('.line').css('background', '#FE5151');
+      $('#to-top').css('display', 'block');
     } else if ($(this).scrollTop() < 10) {
       $('nav').css('background', 'transparent');
       $('nav').removeClass('scrolled');
       $('.nav-link, .logo-h3').css('color', '#fff');
       $('.line').css('background', '#fff');
+      $('#to-top').css('display', 'none');
     }
 });
 
 //Animate the scrolling on nav a click
-$('.nav-link, .mobile-link').click(function() {
+$('.nav-link, .mobile-link, #to-top').click(function() {
   $('html, body').animate({
     scrollTop: $($(this).attr('href')).offset().top
   }, 500);
