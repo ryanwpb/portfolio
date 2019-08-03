@@ -329,6 +329,7 @@ p.sect-sub-heading {
 section#stories {
   background-color: #fff;
   transform: skewY(-7deg);
+  padding: 15rem 0;
 }
 
 section#stories> * {
