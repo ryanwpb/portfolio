@@ -296,6 +296,7 @@ span.sect-span {
 .composition-photo.p3 {
   top: 10rem;
   left: 20%;
+  z-index: 10;
 }
 
 #to-top {
@@ -315,6 +316,92 @@ span.sect-span {
   padding: 18px;
   border-radius: 100%;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.64);
+}
+
+section#stories {
+  background-color: #FE5151;
+  transform: skewY(-7deg);
+}
+
+section#stories>* {
+  transform: skewY(7deg);
+}
+
+.story {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skewX(-12deg);
+  cursor: pointer;
+  backface-visibility: hidden;
+}
+
+.story>* {
+  transform: skewX(12deg);
+}
+
+.story-shape {
+  height: 7rem;
+  width: 20rem;
+  border-radius: 100%;
+  background: #ccc;
+  margin: 0 1rem 0 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.story:hover .caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.story:hover .story-shape {
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+}
+
+.story:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.shape-1 {
+  background-image: url("../Images/person-1.jpg");
+}
+
+.shape-2 {
+  background-image: url("../Images/person-2.jpeg");
+}
+
+.shape-3 {
+  background-image: url("../Images/person-3.jpg");
+}
+
+.testimonial {
+  font-family: 'Shadows Into Light', cursive;
+  color: #8F12FD;
 }
 
 @keyframes moveInLeft {
@@ -408,5 +495,20 @@ span.sect-span {
   .composition-photo.p3 {
     top: 9rem;
     left: 10%;
+  }
+
+  .story {
+    flex-wrap: wrap;
+    transform: skewX(0deg);
+  }
+
+  .story>* {
+    transform: skewX(0deg);
+  }
+
+  .story-shape {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 0 1rem 0;
   }
 }
