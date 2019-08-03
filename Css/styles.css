@@ -227,6 +227,14 @@ nav.scrolled {
   color: #222;
 }
 
+.sect-heading::first-letter {
+  border-bottom: solid 4px #8F12FD;
+}
+
+span.sect-span {
+  font-weight: 200;
+}
+
 .row {
   max-width: 1280px;
   margin: 0 auto;
