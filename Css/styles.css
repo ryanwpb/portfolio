@@ -199,6 +199,10 @@ nav.scrolled {
   animation-duration: 4s;
 }
 
+.sect-heading .white, .sect-sub-heading .white {
+  color: #fff;
+}
+
 .defualt {
   padding: 20rem 2rem;
   background: #F4F4F4;
@@ -211,10 +215,12 @@ nav.scrolled {
 
 .margin-bottom-small {
   margin-bottom: 1rem;
+  padding: 0 2rem;
 }
 
 .margin-bottom-med {
   margin-bottom: 5rem;
+  padding: 0 2rem;
 }
 
 /* .margin-bottom-large {
@@ -419,9 +425,12 @@ section#stories>* {
 }
 
 section#work {
-  margin-top: -20rem;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../Images/blurred-night.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
-
 
 @keyframes moveInLeft {
   0% {
