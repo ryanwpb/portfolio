@@ -35,3 +35,45 @@ $('.nav-link, .mobile-link, #to-top').click(function() {
   }, 500);
   return false;
 });
+
+
+
+// function debounce(func, wait = 20, immediate = true) {
+//   var timeout;
+//   return function() {
+//     var context = this,
+//       args = arguments;
+//     var later = function() {
+//       timeout = null;
+//       if (!immediate) func.apply(context, args);
+//     };
+//     var callNow = immediate && !timeout;
+//     clearTimeout(timeout);
+//     timeout = setTimeout(later, wait);
+//     if (callNow) func.apply(context, args);
+//   };
+// }
+//
+// var fadeElms = document.querySelectorAll('');
+//
+// function checkSlide(e) {
+//   fadeElms.forEach(fadeElms => {
+//     //halfway throught the element
+//     const fadeInAt = (window.scrollY + window.innerHeight) -
+//       fadeElms.clientHeight / 2;
+//
+//     //bottom of element
+//     const elmBottom = fadeElms.offsetTop + fadeElms.clientHeight;
+//
+//     const isHalfShown = fadeInAt > fadeElms.offsetTop;
+//
+//     const isNotScrolledPast = window.scrollY < elmBottom;
+//     if (isHalfShown && isNotScrolledPast) {
+//       $(fadeElms).addClass('active');
+//     } else {
+//       $(fadeElms).removeClass('active');
+//     }
+//   });
+// }
+//
+// window.addEventListener('scroll', debounce(checkSlide));

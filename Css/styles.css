@@ -359,7 +359,6 @@ section#stories>* {
   transform: skewX(12deg);
 }
 
-
 .story-shape {
   height: 7rem;
   width: 20rem;
@@ -417,6 +416,20 @@ section#stories>* {
 .testimonial {
   font-family: 'Shadows Into Light', cursive;
   color: #8F12FD;
+}
+
+section#work {
+  position: relative;
+  margin-top: -20rem;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 @keyframes moveInLeft {
