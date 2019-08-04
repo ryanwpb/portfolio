@@ -425,7 +425,7 @@ section#stories>* {
 }
 
 section#work {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("../Images/blurred-night.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../Images/blurred-night.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
