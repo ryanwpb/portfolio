@@ -419,18 +419,9 @@ section#stories>* {
 }
 
 section#work {
-  position: relative;
   margin-top: -20rem;
 }
 
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
 
 @keyframes moveInLeft {
   0% {
