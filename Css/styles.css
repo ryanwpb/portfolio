@@ -717,4 +717,12 @@ button {
     height: 10rem;
     margin: 0 0 1rem 0;
   }
+
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content-left, .content-right {
+    width: 100%;
+  }
 }
