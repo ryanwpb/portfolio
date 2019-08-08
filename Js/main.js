@@ -36,48 +36,11 @@ $('.nav-link, .mobile-link, #to-top').click(function() {
   return false;
 });
 
-function debounce(func, wait = 20, immediate = true) {
-  var timeout;
-  return function() {
-    var context = this,
-      args = arguments;
-    var later = function() {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-}
 
 
-var fadeElms = $('story')
-
-
-function checkSlide(e) {
-  fadeElms.forEach(fadeElms => {
-    //halfway throught the element
-    const fadeInAt = (window.scrollY + window.innerHeight) -
-      fadeElms.clientHeight / 2;
-    //bottom of element
-    const elmBottom = fadeElms.offsetTop + fadeElms.clientHeight;
-
-    const isHalfShown = fadeInAt > fadeElms.offsetTop;
-
-    const isNotScrolledPast = window.scrollY < elmBottom;
-    if (isHalfShown && isNotScrolledPast) {
-      $(fadeElms).addClass('active');
-    } else {
-      $(fadeElms).removeClass('active');
-    }
-  });
-}
-
-window.addEventListener('scroll', debounce(checkSlide));
 
 $(function() {
+
   $(window).scroll(function() {
 
 
@@ -91,7 +54,7 @@ $(function() {
 
       if (bottom_of_window > bottom_of_object) {
         $(this).addClass('active');
-      } else if (bottom_of_window < bottom_of_object) {
+      } else if (bottom_of_window < bottom_of_object - 100) {
         $(this).removeClass('active');
       }
     });
