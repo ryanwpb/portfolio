@@ -357,11 +357,19 @@ section#stories>* {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-transform: skewX(-12deg);
-  -moz-transform: skewX(-12deg);
-  transform: skewX(-12deg);
+  -webkit-transform: skewX(-12deg) translate(-30%) scale(1);
+  -moz-transform: skewX(-12deg) translate(-30%) scale(1);
+  transform: skewX(-12deg) translate(-30%) scale(1);
   cursor: pointer;
   backface-visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.story.active {
+  opacity: 1;
+  -webkit-transform: skewX(-12deg) translate(0%) scale(1);
+  transform: skewX(-12deg) translate(0%) scale(1);
 }
 
 .story>* {
@@ -457,18 +465,6 @@ section#contact {
   width: 768px;
   max-width: 100%;
   min-height: 480px;
-  opacity: 0;
-  -webkit-transform: translate(-30%, 0px) scale(1);
-  -moz-transform: translate(-30%, 0px) scale(1);
-  transform: translate(-30%, 0px) scale(1);
-  transition: all 0.5s;
-}
-
-.container.active {
-  -webkit-transform: translate(0%, 0px) scale(1);
-  -mox-transform: translate(0%, 0px) scale(1);
-  transform: translate(0%, 0px) scale(1);
-  opacity: 1;
 }
 
 .content-left {

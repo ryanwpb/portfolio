@@ -53,7 +53,7 @@ function debounce(func, wait = 20, immediate = true) {
 }
 
 
-var fadeElms = document.querySelectorAll('.container');
+var fadeElms = $('story')
 
 
 function checkSlide(e) {
@@ -76,3 +76,25 @@ function checkSlide(e) {
 }
 
 window.addEventListener('scroll', debounce(checkSlide));
+
+$(function() {
+  $(window).scroll(function() {
+
+
+    $('.story').each(function(i) {
+
+      var bottom_of_object = $(this).position().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      /* Adjust the number to either have a delay or that the content starts fading a bit before you reach it  */
+      bottom_of_window = bottom_of_window;
+
+      if (bottom_of_window > bottom_of_object) {
+        $(this).addClass('active');
+      } else if (bottom_of_window < bottom_of_object) {
+        $(this).removeClass('active');
+      }
+    });
+
+  });
+});
