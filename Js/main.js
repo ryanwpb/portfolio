@@ -38,7 +38,6 @@ $('.nav-link, .mobile-link, #to-top').click(function() {
 
 
 
-
 $(function() {
 
   $(window).scroll(function() {
@@ -54,7 +53,7 @@ $(function() {
 
       if (bottom_of_window > bottom_of_object) {
         $(this).addClass('active');
-      } else if (bottom_of_window < bottom_of_object - 100) {
+      } else if (bottom_of_window < bottom_of_object + 200) {
         $(this).removeClass('active');
       }
     });

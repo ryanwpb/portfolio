@@ -449,6 +449,39 @@ section#work>* {
   transform: skewY(7deg);
 }
 
+.skill-box {
+  width: 300px;
+  margin: 0 auto;
+  background: #fff;
+  opacity: 0.9;
+  min-height: 300px;
+  border-radius: 3px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.skill-heading {
+  text-align: center;
+}
+
+.skill-heading i {
+  font-size: 100px;
+  color: #FE5151;
+}
+
+.skill-desc h3 {
+  padding: 10px 0;
+  text-align: center;
+  color: #FE5151;
+  margin-bottom: 10px;
+}
+
+.skill-desc p {
+  color: #FE5151;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
 section#contact {
   background: #F4F4F4;
   padding: 15rem 2rem 3rem;
