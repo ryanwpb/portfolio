@@ -470,6 +470,9 @@ section#work>* {
   width: 25px;
   height: 25px;
   border-radius: 100%;
+  text-align: center;
+  padding: 20px;
+  z-index: -1;
 }
 
 .box-area li:nth-child(1) {
@@ -485,6 +488,7 @@ section#work>* {
   height: 30px;
   animation-delay: 1.5s;
   animation-duration: 10s;
+  padding: 7px 0;
 }
 
 .box-area li:nth-child(3) {
@@ -492,6 +496,7 @@ section#work>* {
   width: 100px;
   height: 100px;
   animation-delay: 5.5s;
+  padding: 40px 0;
 }
 
 .box-area li:nth-child(4) {
@@ -500,6 +505,7 @@ section#work>* {
   height: 150px;
   animation-delay: 5.5s;
   animation-duration: 15s;
+  padding: 45px 0;
 }
 
 .box-area li:nth-child(5) {
@@ -507,6 +513,7 @@ section#work>* {
   width: 40px;
   height: 40px;
   animation-delay: 0s;
+  padding: 10px 0;
 }
 
 .box-area li:nth-child(6) {
@@ -514,6 +521,27 @@ section#work>* {
   width: 110px;
   height: 110px;
   animation-delay: 3.5s;
+  padding: 30px 0;
+}
+
+i.icon.ion-logo-sass {
+  font-size: 45px;
+}
+
+i.icon.ion-logo-html5 {
+  font-size: 45px;
+}
+
+i.icon.ion-logo-javascript {
+  font-size: 25px;
+}
+
+i.icon.ion-logo-css3 {
+  font-size: 20px;
+}
+
+i.icon.ion-logo-nodejs {
+  font-size: 50px;
 }
 
 section#contact {
@@ -624,8 +652,9 @@ button {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
   }
+
   100% {
-    transform: translateY(-800px) rotate(3600deg);
+    transform: translateY(-470px) rotate(3600deg);
     opacity: 0;
   }
 }
