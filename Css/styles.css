@@ -484,11 +484,11 @@ section#work>* {
 
 .box-area li:nth-child(2) {
   left: 12%;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   animation-delay: 1.5s;
   animation-duration: 10s;
-  padding: 7px 0;
+  padding: 5px 0;
 }
 
 .box-area li:nth-child(3) {
@@ -546,6 +546,10 @@ i.icon.ion-logo-css3 {
 
 i.icon.ion-logo-nodejs {
   font-size: 50px;
+}
+
+i.icon.ion-logo-npm {
+  font-size: 30px;
 }
 
 section#contact {
