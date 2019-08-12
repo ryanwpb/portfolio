@@ -618,6 +618,7 @@ input {
   width: 100%;
   font-size: 16px;
   color: #ff416c;
+  border-radius: 3px;
 }
 
 .social i {
