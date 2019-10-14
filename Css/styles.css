@@ -224,7 +224,7 @@ nav.scrolled {
   margin-bottom: 8rem;
 } */
 section#about {
-  background: #E3E7EE;
+  background: #f5f8fa;
 }
 
 .sect-heading {
@@ -553,7 +553,7 @@ i.icon.ion-logo-npm {
 }
 
 section#contact {
-  background: #E3E7EE;
+  background: #f5f8fa;
   padding: 15rem 2rem 3rem;
 }
 
