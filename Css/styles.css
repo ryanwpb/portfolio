@@ -196,7 +196,8 @@ nav.scrolled {
   background: #FE5151;
   color: #fff;
   animation-name: moveInBottom;
-  animation-duration: 4s;
+  animation-duration: 2s;
+  position: relative;
 }
 
 .sect-heading .white, .sect-sub-heading .white {
@@ -703,12 +704,12 @@ button {
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(0px);
+    top: 100px;
   }
 
   100% {
     opacity: 1;
-    transform: translate(0);
+    top: 0px;
   }
 }
 
