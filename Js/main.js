@@ -15,10 +15,10 @@ $(".lines").on("click", function() {
     $(".top").addClass("clicked");
     $(".bottom").addClass("clacked");
     $(".middle").addClass("cloked");
-    $(m).addClass("active");
+    $(m).addClass("toggled");
   } else {
     m.style.left = "-270px";
-    $(m).removeClass("active");
+    $(m).removeClass("toggled");
     $(".top").removeClass("clicked");
     $(".bottom").removeClass("clacked");
     $(".middle").removeClass("cloked");
