@@ -88,20 +88,20 @@ nav.scrolled {
   cursor: pointer;
 }
 
-.side-bar {
+#side-bar {
   display: none;
 }
 
-.side-bar ul {
+#side-bar ul {
   list-style: none;
   margin: 2rem auto;
 }
 
-.side-bar li {
+#side-bar li {
   margin: 2rem;
 }
 
-.side-bar a {
+#side-bar a {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
@@ -113,7 +113,7 @@ nav.scrolled {
   overflow: hidden;
 }
 
-.side-bar a:after {
+#side-bar a:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -127,15 +127,15 @@ nav.scrolled {
   transition-timing-function: ease-out;
 }
 
-.side-bar a:hover:after,
-.side-bar a:focus:after,
-.side-bar a:active:after {
+#side-bar a:hover:after,
+#side-bar a:focus:after,
+#side-bar a:active:after {
   left: 0;
   right: auto;
   width: 100%;
 }
 
-.side-bar.toggled {
+#side-bar.toggled {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.64);
 }
 
@@ -717,6 +717,7 @@ button {
 @media only screen and (max-width: 767px) {
   .lines {
     display: block;
+    z-index: 10;
   }
 
   .main-nav {
@@ -729,13 +730,29 @@ button {
     background: #fff;
     margin: 5px 0;
     border-radius: 3px;
+    transition: all .3s;
   }
 
-  .side-bar {
+  .line.clicked {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
+
+  .line.cloked {
+    display: none;
+  }
+
+  .line.clacked {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 0;
+  }
+
+  #side-bar {
     display: block;
     position: fixed;
     top: 0px;
-    left: -270px;
     height: 100%;
     width: 270px;
     transition: all 0.3s ease;

@@ -1,13 +1,28 @@
 // Side nav toggel.
-$('.lines').on('click', function() {
-  $('.side-bar').css('left', '0');
-  $('.side-bar').addClass('toggled');
+$('main').on( "click", function() {
+    $('#side-bar').css( "left", "-270px");
+    $('#side-bar').removeClass('active');
+    $(".top").removeClass("clicked");
+    $(".bottom").removeClass("clacked");
+    $(".middle").removeClass("cloked");
 });
 
 
-$('main').on('click', function() {
-  $('.side-bar').css('left', '-270px');
-  $('.side-bar').removeClass('toggled');
+$(".lines").on("click", function() {
+  var m = document.getElementById("side-bar");
+  if (m.style.left === "-270px") {
+    m.style.left = "0";
+    $(".top").addClass("clicked");
+    $(".bottom").addClass("clacked");
+    $(".middle").addClass("cloked");
+    $(m).addClass("active");
+  } else {
+    m.style.left = "-270px";
+    $(m).removeClass("active");
+    $(".top").removeClass("clicked");
+    $(".bottom").removeClass("clacked");
+    $(".middle").removeClass("cloked");
+  }
 });
 
 
